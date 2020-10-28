@@ -1,0 +1,30 @@
+.numbers {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 86px;
+}
+
+.numbers__block {
+  background: #EBEBEB;
+  display: flex;
+  flex-direction: column;
+}
+
+.number__block {
+  display: flex;
+  margin-bottom: 26px;
+}
+
+.number__content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+.number__content:last-child {
+  margin-right: 0;
+}
+
+.number__numb {
+  font-size: 21px;
+  color: #008A9A;
+}

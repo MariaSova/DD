@@ -1,0 +1,49 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(256px);
+}
+
+.title__projects {
+    margin-bottom: rem(42px);
+}
+
+.projects__block {
+    display: flex;
+    margin-bottom: rem(46px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.project__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: rem(166px);
+}
+.block__mr {
+    margin-right: rem(110px);
+}
+.block__mt {
+    margin-top: rem(18px);
+}
+.block-two__project {
+    margin-right: rem(133px);
+}
+.block-two__project3 {
+    margin-right: rem(158px);
+}
+
+.project__text {
+    font-size: rem(14px);
+    line-height: rem(16px);
+    margin-top: rem(7px);
+}
+
+.text__special {
+    max-width: rem(165px);
+    text-align: center;
+}
