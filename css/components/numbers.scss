@@ -9,11 +9,31 @@
     display: flex;
     flex-direction: column;
     padding: rem(40px) rem(50px) rem(50px) rem(50px) ;
+
+    @include tablets {
+        padding: rem(30px) rem(15px) rem(30px) rem(15px) ;
+        
+    }
+    
+    @include phones {
+        
+    }
+    
 }
 
 .number__block {
     display: flex;
     margin-bottom: rem(30px);
+    
+    
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    
 }
 
 .number__content {
@@ -24,6 +44,14 @@
     &:last-child {
         margin-right: 0;
     }
+
+    @include tablets {
+        display: flex;
+        margin-bottom: rem(30px);
+        
+    }
+    
+    
 }
 
 .number__numb {

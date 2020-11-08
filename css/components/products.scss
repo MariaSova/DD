@@ -18,12 +18,25 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: rem(40px);
+    }
 }
 
 .product__block {
     display: inline-block;
     vertical-align: top;
     position: relative;
+
+    @include tablets {
+        
+        margin-bottom: rem(40px);
+    }
 }
 .product__page {
     display: block;

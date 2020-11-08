@@ -15,6 +15,16 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    @include tablets {
+        display: flex;
+
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin-bottom: rem(20px);
+    }
 }
 
 .project__block {
@@ -23,18 +33,42 @@
     justify-content: center;
     align-items: center;
     margin-right: rem(166px);
+
+    @include tablets {
+
+        margin-right: rem(20px);
+        margin-bottom: rem(20px);
+    }
 }
 .block__mr {
     margin-right: rem(110px);
+
+    @include tablets {
+
+        margin-right: rem(20px);
+        margin-bottom: rem(20px);
+    }
 }
 .block__mt {
     margin-top: rem(18px);
 }
 .block-two__project {
     margin-right: rem(133px);
+
+    @include tablets {
+
+        margin-right: rem(30px);
+        margin-bottom: rem(20px);
+    }
 }
 .block-two__project3 {
     margin-right: rem(158px);
+
+    @include tablets {
+
+        margin-right: rem(30px);
+        margin-bottom: rem(20px);
+    }
 }
 
 .project__text {
