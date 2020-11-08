@@ -4,6 +4,16 @@ html {
   font-size: 18px;
   background: #E5E5E5;
 }
+@media screen and (max-width: 770px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 490px) {
+  html {
+    font-size: 16px;
+  }
+}
 
 html,
 body {
@@ -82,10 +92,36 @@ img {
   position: relative;
   overflow: hidden;
 }
+@media screen and (max-width: 770px) {
+  .hero {
+    min-height: 33.3333333333rem;
+    margin-top: 4.7222222222rem;
+    margin-bottom: 2.7777777778rem;
+    display: flex;
+    flex: 1;
+  }
+}
+@media screen and (max-width: 490px) {
+  .hero {
+    min-height: 33.3333333333rem;
+    margin-top: 2.7777777778rem;
+    margin-bottom: 2.7777777778rem;
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
 
 .hero__container {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 490px) {
+  .hero__container {
+    min-height: 16.6666666667rem;
+    margin-top: 3.3333333333rem;
+  }
 }
 
 .hero__title-section {
@@ -93,6 +129,13 @@ img {
   flex-direction: column;
   align-items: center;
   min-width: 30.5555555556rem;
+}
+@media screen and (max-width: 490px) {
+  .hero__title-section {
+    display: flex;
+    flex: 1;
+    min-width: 0rem;
+  }
 }
 
 .hero__title {
@@ -113,40 +156,36 @@ img {
   color: #0079c0;
 }
 
-.hero__player-section {
-  display: flex;
-  align-items: flex-start;
-  overflow: hidden;
-  position: relative;
-  background: #EBEBEB;
-  padding: 1.5rem 0.9444444444rem 1.4444444444rem 1.6666666667rem;
-}
-
-.hero__player-video {
-  min-width: 60%;
-  margin-right: 1.7777777778rem;
-}
-
-.hero__player-content {
-  min-width: 34%;
-  margin-top: 0.7222222222rem;
-  line-height: 1.1666666667rem;
-}
-
-.hero__player-text {
-  margin-bottom: 1.1111111111rem;
-}
-
 .picture {
   overflow: hidden;
   transform: translateX(-100px);
   max-width: 31.8888888889rem;
+}
+@media screen and (max-width: 770px) {
+  .picture {
+    display: none;
+  }
+}
+@media screen and (max-width: 490px) {
+  .picture {
+    display: none;
+  }
 }
 
 .picture1 {
   overflow: hidden;
   transform: translateX(100px);
   max-width: 34rem;
+}
+@media screen and (max-width: 770px) {
+  .picture1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 490px) {
+  .picture1 {
+    display: none;
+  }
 }
 
 .partners {
@@ -189,10 +228,22 @@ img {
   flex-direction: column;
   padding: 2.2222222222rem 2.7777777778rem 2.7777777778rem 2.7777777778rem;
 }
-
+@media screen and (max-width: 770px) {
+  .numbers__block {
+    padding: 1.6666666667rem 0.8333333333rem 1.6666666667rem 0.8333333333rem;
+  }
+}
 .number__block {
   display: flex;
   margin-bottom: 1.6666666667rem;
+}
+@media screen and (max-width: 490px) {
+  .number__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 .number__content {
@@ -202,6 +253,12 @@ img {
 }
 .number__content:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 770px) {
+  .number__content {
+    display: flex;
+    margin-bottom: 1.6666666667rem;
+  }
 }
 
 .number__numb {
@@ -230,6 +287,11 @@ img {
   flex-direction: column;
   margin-bottom: 8.8888888889rem;
 }
+@media screen and (max-width: 770px) {
+  .company {
+    margin-bottom: 4.4444444444rem;
+  }
+}
 
 .title {
   display: flex;
@@ -250,10 +312,34 @@ img {
   align-items: center;
   margin-bottom: 8.1111111111rem;
 }
+@media screen and (max-width: 770px) {
+  .company__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 3.8888888889rem;
+  }
+}
+@media screen and (max-width: 490px) {
+  .company__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2.2222222222rem;
+  }
+}
 
 .company__logo {
   margin-left: 3.8888888889rem;
   margin-right: 5.1111111111rem;
+}
+@media screen and (max-width: 770px) {
+  .company__logo {
+    margin-left: 0;
+    margin-bottom: 1.6666666667rem;
+  }
 }
 
 .company__block-text {
@@ -263,6 +349,15 @@ img {
 
 .company__content {
   display: flex;
+}
+@media screen and (max-width: 770px) {
+  .company__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 1.6666666667rem;
+  }
 }
 
 .company__content-col {
@@ -327,11 +422,25 @@ img {
 .products__block:last-child {
   margin-bottom: 0;
 }
+@media screen and (max-width: 770px) {
+  .products__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2.2222222222rem;
+  }
+}
 
 .product__block {
   display: inline-block;
   vertical-align: top;
   position: relative;
+}
+@media screen and (max-width: 770px) {
+  .product__block {
+    margin-bottom: 2.2222222222rem;
+  }
 }
 
 .product__page {
@@ -369,6 +478,15 @@ img {
 .projects__block:last-child {
   margin-bottom: 0;
 }
+@media screen and (max-width: 770px) {
+  .projects__block {
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1.1111111111rem;
+  }
+}
 
 .project__block {
   display: flex;
@@ -377,9 +495,21 @@ img {
   align-items: center;
   margin-right: 9.2222222222rem;
 }
+@media screen and (max-width: 770px) {
+  .project__block {
+    margin-right: 1.1111111111rem;
+    margin-bottom: 1.1111111111rem;
+  }
+}
 
 .block__mr {
   margin-right: 6.1111111111rem;
+}
+@media screen and (max-width: 770px) {
+  .block__mr {
+    margin-right: 1.1111111111rem;
+    margin-bottom: 1.1111111111rem;
+  }
 }
 
 .block__mt {
@@ -389,9 +519,21 @@ img {
 .block-two__project {
   margin-right: 7.3888888889rem;
 }
+@media screen and (max-width: 770px) {
+  .block-two__project {
+    margin-right: 1.6666666667rem;
+    margin-bottom: 1.1111111111rem;
+  }
+}
 
 .block-two__project3 {
   margin-right: 8.7777777778rem;
+}
+@media screen and (max-width: 770px) {
+  .block-two__project3 {
+    margin-right: 1.6666666667rem;
+    margin-bottom: 1.1111111111rem;
+  }
 }
 
 .project__text {
